@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "fluent-plugin-pushover"
-  s.version     = "0.0.4"
+  s.version     = "1.0.0"
   s.authors     = ["Jan Karásek"]
   s.email       = ["devel@hkar.eu"]
   s.homepage    = "https://github.com/hkar/fluent-plugin-pushover"
