@@ -13,8 +13,8 @@ class Fluent::PushoverOutput < Fluent::Output
 
   def initialize
     super
-    require 'net/http'
     require 'uri'
+    require 'net/http'
   end
 
   def configure(conf)
@@ -24,7 +24,7 @@ class Fluent::PushoverOutput < Fluent::Output
 
   def emit(tag, es, chain)
     es.each do |time, record|
-      send(record['message'])
+      send(record)
     end
 
     chain.next
@@ -32,7 +32,7 @@ class Fluent::PushoverOutput < Fluent::Output
 
   def send(message)
     begin
-      response = Net::HTTP.post_form(uri, {'token' => @account_token, 'user' => @user_key, 'message' => message})
+      response = Net::HTTP.post_form(URI.parse(PUSHOVER_ENDPOINT), {'token' => @account_token, 'user' => @user_key, 'message' => message})
     rescue => e
       log.error "Pushover error: #{e.message}"
     end
