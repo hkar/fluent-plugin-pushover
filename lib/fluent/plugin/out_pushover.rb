@@ -1,5 +1,5 @@
 class Fluent::PushoverOutput < Fluent::Output
-  Fluent::Plugin.register_output('twilio', self)
+  Fluent::Plugin.register_output('pushover', self)
 
   config_param :account_token, :string
   config_param :user_key, :string
