@@ -1,4 +1,4 @@
-fluent-plugin-pushover [![Build Status](https://travis-ci.org/hkar/fluent-plugin-pushover.svg?branch=master)](https://travis-ci.org/hkar/fluent-plugin-pushover)
+fluent-plugin-pushover [![Build Status](https://travis-ci.org/hkar/fluent-plugin-pushover.svg?branch=master)](https://travis-ci.org/hkar/fluent-plugin-pushover) [![Code Climate](https://codeclimate.com/github/hkar/fluent-plugin-pushover/badges/gpa.svg)](https://codeclimate.com/github/hkar/fluent-plugin-pushover)
 =====================
 
 ## Installation
